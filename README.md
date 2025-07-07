@@ -1,12 +1,94 @@
-# React + Vite
+ENTNT Dental Center Management Dashboard
+Frontend Assignment Submission for ENTNT
+Role: Frontend Developer (React)
+Deadline: July 8, 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deployed Link: https://entntdentalproject.netlify.app/
+GitHub Repository: https://github.com/Ahbab18/ENTNT-Dental-Project
 
-Currently, two official plugins are available:
+📌 Project Overview
+This project is a frontend-only Dental Center Management Dashboard for ENTNT. It simulates a system that manages patients, appointments (incidents), file uploads, and role-based access — all using React, TailwindCSS, and localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users:
 
-## Expanding the ESLint configuration
+👨‍⚕️ Admin (Dentist): full access
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧑‍⚕️ Patient: limited view of their data
+
+No backend or external APIs were used.
+
+🚀 Tech Stack
+React (Vite)
+
+React Router v6
+
+React Context API
+
+TailwindCSS
+
+localStorage (for all persistent data)
+
+React Calendar (for calendar view)
+
+🔐 Authentication
+
+Hardcoded users: 
+
+admin@entnt.in / admin123 (Admin)
+
+john@entnt.in / patient123 (Patient)
+
+Data stored in localStorage
+
+Role-based Protected Routes using a custom ProtectedRoute component
+
+Session persistence via localStorage
+
+📁 Features
+
+🔑 Authentication
+
+Login using hardcoded credentials
+
+Role-based access (Admin vs Patient)
+
+👩‍⚕️ Admin Dashboard
+
+View dashboard with KPIs (appointments, revenue, patients, etc.)
+
+Manage Patients (Add, Edit, Delete)
+
+Manage Appointments/Incidents
+
+Upload & preview files (stored as base64)
+
+Calendar view of upcoming appointments
+
+🧑 Patient View
+
+View own profile
+
+View upcoming and past appointments
+
+View treatment cost, files, and notes
+
+🗂 File Upload & Preview
+
+Images and PDFs converted to base64
+
+Preview thumbnails for images
+
+Stored per-appointment
+
+📆 Calendar
+
+Highlights days with appointments
+
+Clicking a day shows relevant treatments
+
+Uses react-calendar with custom styling
+
+📱 Responsive Design
+Mobile/tablet/desktop friendly UI
+
+Uses Tailwind utility classes
